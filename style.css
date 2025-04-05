@@ -68,6 +68,8 @@ span {
     background-color: #fff7fc;
     margin-top: 1em;
     padding: 1.2em;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .prep-title {
@@ -79,6 +81,7 @@ span {
 .prep-list {
     font-family: "Outfit";
     font-size: .95rem;
+    color: hsl(30, 10%, 34%);
     list-style-type: disc;
     display: flex;
     flex-direction: column;
@@ -86,7 +89,8 @@ span {
     padding: 0px 0px 10px 2.5rem;
 }
 
-.prep-list li{
+.prep-list li,
+.ingredients-list li{
     padding-left: 1.5em;
 }
 
@@ -97,5 +101,32 @@ span {
 
 /* Ingredients Styles */
 
+.ingredients-title {
+    font-family: "YoungSerif";
+    font-weight: 400;
+    color: #84432f;
+    padding: 0px 0px 13px 0px;
+
+}
+
+.ingredients {
+    padding-bottom: 1em;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.ingredients-list {
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+    padding-left: 1.5em;
+}
+
+.ingredients-list li {
+    padding-bottom: 0.7em;
+}
+
+.ingredients-list li::marker {
+    font-size: 0.8em;
+    color: #84432f;
+}
 
 
