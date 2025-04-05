@@ -1,18 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Outfit";
     src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "YoungSerif";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+
 body {
     background-color: #f3e5d8;
+    display: flex;
+    justify-content: center;
 }
 
+span {
+    font-weight: bold;
+}
+
+/* img styles */
 .omelette-pic {
-    width: 500px;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
+
+/* whole container style */
 .container {
+    width: 40%;
+    height: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/* First section styles */
+
+.first-section {
     display: flex;
     flex-direction: column;
-    width: 500px;
 }
+
+.title {
+    font-family: "YoungSerif";
+    font-size: 2.3rem;
+    padding-top: 1em;
+}
+
+.para1 {
+    font-family: "Outfit";
+    font-size: 1rem;
+    padding-top: 1em; 
+    padding-bottom: .9em;
+    color: hsl(30, 10%, 34%);
+    width: 95%;
+}
+
+/* Preparation list styles */
+.preparation {
+    background-color: #fff7fc;
+    margin-top: 1em;
+    padding: 1.2em;
+}
+
+.prep-title {
+    font-family: "Outfit";
+    padding: 0px 0px 12px 10px;
+    color: #812d4f;
+}
+
+.prep-list {
+    font-family: "Outfit";
+    font-size: .95rem;
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px 0px 10px 2.5rem;
+}
+
+.prep-list li{
+    padding-left: 1.5em;
+}
+
+.prep-list li::marker {
+    font-size: .8em;
+    color: #812d4f;
+}
+
+/* Ingredients Styles */
+
+
+
