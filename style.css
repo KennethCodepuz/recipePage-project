@@ -24,6 +24,26 @@ span {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 375px) {
+    html, body {
+        margin: 0;
+    }
+    body {
+      background-color: lightblue;
+      display: flex;
+    }
+
+    .container {
+        width: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .amount {
+        padding-left: 2em !important;
+    }
+  }
+
 /* img styles */
 .omelette-pic {
     border-radius: 15px;
@@ -33,12 +53,12 @@ span {
 
 /* whole container style */
 .container {
-    width: 40%;
+    width: 50%;
     height: auto;
     background-color: white;
     padding: 40px;
     border-radius: 20px;
-    margin-top: 10px;
+    margin: 10%;
 }
 
 /* First section styles */
@@ -60,7 +80,7 @@ span {
     padding-top: 1em; 
     padding-bottom: .9em;
     color: hsl(30, 10%, 34%);
-    width: 95%;
+    width: 100%;
 }
 
 /* Preparation list styles */
@@ -129,4 +149,77 @@ span {
     color: #84432f;
 }
 
+/* Instrunctions Style */
+
+.instructions {
+    margin-top: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.instruction-title {
+    font-family: "YoungSerif";
+    font-weight: 400;
+    color: #84432f;
+    padding-bottom: 15px;
+}
+
+.instruction-list {
+    font-family: "Outfit";
+    list-style-type: none;
+    padding-left: 0.8em;
+}
+
+.instruction-description {
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+}
+
+.instruction-list li{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 5% 80%;
+    padding-bottom: 0.5em;
+}
+
+.number {
+    font-family: "Outfit";
+    color: #84432f;
+    padding-right: 1.5rem;
+}
+
+/* Nutrition Section Styles */
+
+.nutrition-title {
+    font-family: "YoungSerif";
+    color: #84432f;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+.nutrition-para {
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+    margin-bottom: 0.5em;
+}
+
+td {
+    font-family: "Outfit";
+    border-top: 1px solid hsl(30, 18%, 87%);
+    padding-left: 2em;
+    width: 60%;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: hsl(30, 10%, 34%);
+}
+
+tr:first-child td {
+    border-top: none;
+}
+
+.amount {
+    padding-left: 6em;
+    color: #84432f;
+    font-weight: bold;
+}
 
