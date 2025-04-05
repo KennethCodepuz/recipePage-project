@@ -43,6 +43,25 @@ span {
     }
   }
 
+  @media only screen and (max-width: 700px) and (min-width: 376px){
+    html, body {
+        margin: 0 !important;
+    }
+    body {
+      display: flex;
+    }
+
+    .container {
+        width: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .amount {
+        padding-left: 2em !important;
+    }
+  }
+
 /* img styles */
 .omelette-pic {
     border-radius: 15px;
@@ -222,7 +241,3 @@ tr:first-child td {
     font-weight: bold;
 }
 
-
-.attribution {
-    margin-top: 1em;
-}
